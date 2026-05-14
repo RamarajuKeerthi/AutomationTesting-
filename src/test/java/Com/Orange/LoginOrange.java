@@ -22,6 +22,7 @@ public class LoginOrange
 		WebDriver driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		driver.get("https://opensource-demo.orangehrmlive.com/");
+				driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		
 		driver.findElement(By.xpath("//*[@name='username']")).sendKeys("Admin");
